@@ -23,10 +23,10 @@ CUSTOM_CORRECTIONS = {
     "validy": "validity",
 }
 
-DB_PATH = "./chroma_db_v4"
+DB_PATH = "./chroma_db_v3"
 COLLECTION_NAME = "jio_knowledge_base"
 EMBEDDING_MODEL = "nomic-embed-text"
-LLM_MODEL = "llama3.1"
+LLM_MODEL = "qwen2.5:7b"
 
 HARMFUL_KEYWORDS = ["hack", "malware", "virus"]
 JIO_KEYWORDS = [

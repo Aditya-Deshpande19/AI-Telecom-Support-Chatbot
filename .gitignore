@@ -5,6 +5,7 @@ __pycache__/
 *.bin
 *.sqlite3
 chroma_db_v4/
+chroma_db_v3/
 chroma_db_parent/
 chroma_langchain_db/
 .env
