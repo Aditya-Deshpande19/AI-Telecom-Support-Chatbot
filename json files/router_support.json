@@ -1,0 +1,14 @@
+[
+  {
+    "topic": "Reset router",
+    "steps": "Press and hold the reset button for 10 seconds until LEDs blink."
+  },
+  {
+    "topic": "Change Wi-Fi password",
+    "steps": "Login to router admin page using IP address and update SSID password."
+  },
+  {
+    "topic": "LED indicators",
+    "steps": "Green indicates normal operation; red indicates fault."
+  }
+]

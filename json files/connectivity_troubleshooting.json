@@ -1,0 +1,14 @@
+[
+  {
+    "issue": "Slow internet speed",
+    "solution": "Restart the router, check connected devices, and ensure router placement is optimal."
+  },
+  {
+    "issue": "No internet connection",
+    "solution": "Check fiber cable connection and power cycle the router."
+  },
+  {
+    "issue": "Wi-Fi not visible",
+    "solution": "Reset router and verify Wi-Fi LED status."
+  }
+]

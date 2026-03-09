@@ -1,0 +1,20 @@
+[
+  {
+    "plan": "599",
+    "speed": "30 Mbps",
+    "billing": "Monthly",
+    "ott": "None"
+  },
+  {
+    "plan": "899",
+    "speed": "100 Mbps",
+    "billing": "Monthly",
+    "ott": "OTT bundle"
+  },
+  {
+    "plan": "1499",
+    "speed": "300 Mbps",
+    "billing": "Monthly",
+    "ott": "Premium OTT bundle"
+  }
+]

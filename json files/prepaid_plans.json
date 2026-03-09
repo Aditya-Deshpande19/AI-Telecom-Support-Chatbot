@@ -1,0 +1,20 @@
+[
+  {
+    "plan": "399",
+    "speed": "30 Mbps",
+    "data": "Unlimited",
+    "ott": "None"
+  },
+  {
+    "plan": "699",
+    "speed": "100 Mbps",
+    "data": "Unlimited",
+    "ott": "OTT apps included"
+  },
+  {
+    "plan": "999",
+    "speed": "150 Mbps",
+    "data": "Unlimited",
+    "ott": "OTT + TV channels"
+  }
+]
