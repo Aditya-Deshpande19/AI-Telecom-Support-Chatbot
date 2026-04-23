@@ -1,0 +1,93 @@
+# Python
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment — secrets must not be baked into the image
+.env
+.env.local
+.env.*.local
+
+# ChromaDB vector stores — bind-mounted at runtime
+chroma_db_v4/
+chroma_db_parent/
+chroma_langchain_db/
+
+# Database files — persisted via Docker volume
+chat_history.db
+*.db
+*.sqlite3
+
+# Data files — large, not needed in image
+final_knowledge_base.json
+jio_faq_data.json
+final_merged_chunks.json
+*.pdf
+Documents/
+JioChatbotDataset_Text/
+
+# Jupyter notebooks
+*.ipynb
+**/.ipynb_checkpoints/
+
+# Testing — not needed in production image
+tests/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Editor and IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Internal planning / operational docs — not for production image
+REMAINING_WORK.md
+BUG_REPORT.md
+PROJECT_STATUS.md
+TESTING_ENDPOINTS.md
+SECURITY_DIRECTIVE.md
+TEST_DIRECTIVE.md
+DOCKER_DIRECTIVE.md
+COMPRESSION_DIRECTIVE.md
+
+# Debug artifacts
+connection.py
+debug_output.json
+pytest*.txt
+test_results*.txt
+*.json.bak
+
+# Docker and CI — no need to copy into the image
+Dockerfile
+docker-compose.yml
+.dockerignore
+.gitignore
+.github/
+Makefile
+
+# Git
+.git/
+
+# README.md is intentionally included in the image

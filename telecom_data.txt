@@ -1,0 +1,5 @@
+Customers can recharge their prepaid plans using the mobile app or USSD codes.
+Billing issues may occur due to extra data usage or international roaming.
+If network coverage is weak, restarting the device or changing location may help.
+Postpaid customers can view their bills through the online portal.
+Customer support is available 24x7 via call and chat.

@@ -1,0 +1,32 @@
+services:
+  api:
+    build: .
+    container_name: jio-rag-api
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      # Point Ollama to host machine — overridable via host env for Linux / custom setups
+      - OLLAMA_HOST=${OLLAMA_HOST:-http://host.docker.internal:11434}
+    volumes:
+      # Persist ChromaDB vector store
+      - ./chroma_db_v3:/app/chroma_db_v3
+      # Named volume for SQLite chat history — mounted at a directory so Docker
+      # does not create a directory where SQLite expects to write a file.
+      # The application opens the DB at /app/data/chat_history.db inside this directory.
+      - chat_history_data:/app/data
+    extra_hosts:
+      # Required on Linux to resolve host.docker.internal
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  # Docker manages this directory — the app creates chat_history.db inside it at runtime
+  chat_history_data:

@@ -1,0 +1,15 @@
+
+API DOCUMENTATION
+
+POST /chat
+
+Request:
+{
+  "question": "What is JioFiber?"
+}
+
+Response:
+{
+  "answer": "...",
+  "confidence": 0.95
+}
